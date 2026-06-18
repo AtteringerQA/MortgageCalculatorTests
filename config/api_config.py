@@ -1,0 +1,1 @@
+STAGE_URL = "https://stage.mortgage.fsk-tech.ru"
