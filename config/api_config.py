@@ -1,1 +1,2 @@
 STAGE_URL = "https://stage.mortgage.fsk-tech.ru"
+ARM_TOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDAzMzAwOTIwMjQiLCJuYW1lIjoiQXJtIFN0YWdlIiwiaWF0Ijo0MjAyOTAwMzMwNDF9.RGMSttMp1t4mWIWERYY7DrtbCzBWwnQoGVfcTPieEuI"

@@ -1,0 +1,243 @@
+MortgageProgramCollectionResponse:
+  type: object
+  required:
+    - totalItems
+    - totalPages
+    - currentPage
+    - items
+  properties:
+    totalItems:
+      type: integer
+      example: 0
+    totalPages:
+      type: integer
+      example: 0
+    currentPage:
+      type: integer
+      example: 0
+    items:
+      type: array
+      items:
+        type: object
+        required:
+          - overpayment
+          - totalPrice
+          - totalApartCost
+          - adjustedInitialFee
+          - tranches
+          - crmMarkup
+          - aboveGovLimitsCommissionFee
+          - bankCommissionFee
+          - dealPriceWoMarkup
+          - dealNetPrice
+          - soldHigherBy
+          - difference
+          - finalInitialFee
+          - baseMarkup
+          - idMortgageProgram
+          - mortgageName
+          - bankInfo
+          - mortgageProgramTypes
+          - maxTerm
+          - gracePeriod
+          - minDownPayment
+          - maxDownPayment
+          - discount
+          - maximumAmount
+        properties:
+          overpayment:
+            type: number
+            example: 0
+          totalPrice:
+            type: number
+            example: 0
+          totalApartCost:
+            type: number
+            example: 0
+          adjustedInitialFee:
+            type: boolean
+            example: true
+          tranches:
+            type: array
+            items:
+              type: object
+              required:
+                - number
+                - sum
+                - date
+                - monthlyPayment
+                - rate
+              properties:
+                number:
+                  type: integer
+                  example: 0
+                sum:
+                  type: number
+                  example: 0
+                date:
+                  type: string
+                  format: date-time
+                  example: "2026-06-21T14:09:28.243Z"
+                monthlyPayment:
+                  type: number
+                  example: 0
+                rate:
+                  type: number
+                  example: 0
+          crmMarkup:
+            type: object
+            required:
+              - amount
+              - percent
+            properties:
+              amount:
+                type: number
+                example: 0
+              percent:
+                type: number
+                example: 0
+          aboveGovLimitsCommissionFee:
+            type: number
+            example: 0
+          bankCommissionFee:
+            type: object
+            required:
+              - amount
+              - percent
+            properties:
+              amount:
+                type: number
+                example: 0
+              percent:
+                type: number
+                example: 0
+          dealPriceWoMarkup:
+            type: number
+            example: 0
+          dealNetPrice:
+            type: object
+            required:
+              - amount
+              - percent
+            properties:
+              amount:
+                type: number
+                example: 0
+              percent:
+                type: number
+                example: 0
+          soldHigherBy:
+            type: number
+            example: 0
+          difference:
+            type: number
+            example: 0
+          finalInitialFee:
+            type: object
+            required:
+              - amount
+              - percent
+            properties:
+              amount:
+                type: number
+                example: 0
+              percent:
+                type: number
+                example: 0
+          baseMarkup:
+            type: object
+            required:
+              - amount
+              - percent
+            properties:
+              amount:
+                type: number
+                example: 0
+              percent:
+                type: number
+                example: 0
+          idMortgageProgram:
+            type: integer
+            example: 0
+          mortgageName:
+            type: string
+            example: "string"
+          subsidyOptionInfo:
+            type: object
+            properties:
+              name:
+                type: string
+                example: "string"
+              guid:
+                type: string
+                example: "string"
+          additionalProgramInfo:
+            type: object
+            properties:
+              name:
+                type: string
+                example: "string"
+              guid:
+                type: string
+                example: "string"
+          bankInfo:
+            type: object
+            required:
+              - id
+              - name
+              - guid
+              - secretName
+            properties:
+              id:
+                type: integer
+                example: 0
+              name:
+                type: string
+                example: "string"
+              guid:
+                type: string
+                example: "string"
+              secretName:
+                type: string
+                example: "string"
+          subsidyVariantInfo:
+            type: object
+            properties:
+              name:
+                type: string
+                example: "string"
+              guid:
+                type: string
+                example: "string"
+          lendingProgramInfo:
+            type: object
+            properties:
+              name:
+                type: string
+                example: "string"
+              guid:
+                type: string
+                example: "string"
+          mortgageProgramTypes:
+            type: array
+            items:
+              type: string
+            example: ["string"]
+          maxTerm:
+            type: integer
+            example: 0
+          gracePeriod:
+            type: boolean
+            example: true
+          minDownPayment:
+            type: number
+            example: 0
+          maxDownPayment:
+            type: number
+            example: 0
+          discount:
+            type: number
+            example: 0
+          maximumAmount:
+            type: number
+            example: 0
